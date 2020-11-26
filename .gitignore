@@ -1,0 +1,11 @@
+*.a
+*.so
+*.o
+*.swp
+*.png
+*.jpg
+*.avi
+*.ps
+*.pnm
+build/
+Vocabulary/ORBvoc.txt

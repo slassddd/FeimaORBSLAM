@@ -1,0 +1,93 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Feima mono",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Examples/Monocular/mono_euroc",
+            // "program": "/home/sl/Desktop/software/ORB_SLAM3_new/Examples/Monocular/mono_euroc",
+            "args": [
+                "ORB_SLAM3_new/Vocabulary/ORBvoc.txt",
+                "FeimaDataSet/configfile/FeiMa_480p.yaml",
+                "FeimaDataSet/data/working",
+                "FeimaDataSet/data/working/FeiMa_TimeStamps.txt"
+            ],
+            "stopAtEntry": false,
+            // "cwd": "${workspaceFolder}",
+            "cwd": "/home/sl/Desktop/software/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "EuRoc mono",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Examples/Monocular/mono_euroc",
+            // "program": "/home/sl/Desktop/software/ORB_SLAM3_new/Examples/Monocular/mono_euroc",
+            "args": [
+                "ORB_SLAM3_new/Vocabulary/ORBvoc.txt",
+                "ORB_SLAM3_new/Examples/Monocular/EuRoC.yaml",
+                "FeimaDataSet/data/EuRoC/MH01",
+                "ORB_SLAM3_new/Examples/Monocular/EuRoC_TimeStamps/MH01.txt"
+            ],
+            "stopAtEntry": false,
+            // "cwd": "${workspaceFolder}",
+            "cwd": "/home/sl/Desktop/software/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Feima avi mono",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Examples/Monocular/mono_feima",
+            // "program": "/home/sl/Desktop/software/ORB_SLAM3_new/Examples/Monocular/mono_euroc",
+            "args": [
+                "ORB_SLAM3_new/Vocabulary/ORBvoc.txt",
+                "ORB_SLAM3_new/Examples/Monocular/EuRoC.yaml",
+                "FeimaDataSet/data_tag/v_determine_axis.avi", // v1000_april  v_determine_axis
+                "0", // 
+                "0"
+            ],
+            "stopAtEntry": false,
+            // "cwd": "${workspaceFolder}",
+            "cwd": "/home/sl/Desktop/software/",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "Build",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ]
+}
